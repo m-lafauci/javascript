@@ -1,38 +1,38 @@
 
 alert("Bienvenido a CALCULADORA ONLINE")
-let operacion = prompt("Ingrese la operación que desea realizar (las opciones disponibles son SUMAR, RESTAR, MULTIPLICAR o DIVIDIR)");
+let operacion = prompt("Ingrese la operación que desea realizar (las opciones disponibles son SUMAR, RESTAR, MULTIPLICAR o DIVIDIR). Para salir ESC.");
 
 while (operacion.toLowerCase() != "esc") {
     switch (operacion.toLowerCase()) {
     case "sumar":
-        num1 = parseInt(prompt("Ingrese el primer número"));
-        num2 = parseInt(prompt("Ingrese el segundo número"));
+        let num1 = parseInt(prompt("Ingrese el primer número"));
+        let num2 = parseInt(prompt("Ingrese el segundo número"));
         let resSum = num1 + num2;
         alert (`El resultado es: ${resSum} (${num1}+${num2})`);
         break;
     case "restar":
-        num1 = parseInt(prompt("Ingrese el primer número"));
-        num2 = parseInt(prompt("Ingrese el segundo número"));
-        let resRes = num1 - num2
-        alert (`El resultado es: ${resRes} (${num1}-${num2})`);
+        let num3 = parseInt(prompt("Ingrese el primer número"));
+        let num4 = parseInt(prompt("Ingrese el segundo número"));
+        let resRes = num3 - num4
+        alert (`El resultado es: ${resRes} (${num3}-${num4})`);
         break;
     case "multiplicar":
-        num1 = parseInt(prompt("Ingrese el primer número"));
-        num2 = parseInt(prompt("Ingrese el segundo número"));
-        let resMul = num1 * num2
-        alert (`El resultado es: ${resMul} (${num1}*${num2})`);
+        let num5 = parseInt(prompt("Ingrese el primer número"));
+        let num6 = parseInt(prompt("Ingrese el segundo número"));
+        let resMul = num5 * num6
+        alert (`El resultado es: ${resMul} (${num5}*${num6})`);
         break;
     case "dividir":
-        num1 = parseInt(prompt("Ingrese el primer número"));
-        num2 = parseInt(prompt("Ingrese el segundo número"));
-        let resDiv = num1 + num2
-        alert (`El resultado es: ${resDiv} (${num1}/${num2})`);
+        let num7 = parseInt(prompt("Ingrese el primer número"));
+        let num8 = parseInt(prompt("Ingrese el segundo número"));
+        let resDiv = num7 / num8
+        alert (`El resultado es: ${resDiv} (${num7}/${num8})`);
         break;
     default:
         alert("Ingrese una operación válida");
         break;
       }
-    operacion = prompt("Ingrese la operación que desea realizar (puede escribir SUMAR, RESTAR, MULTIPLICAR o DIVIDIR)");
+    operacion = prompt("Ingrese la operación que desea realizar (puede escribir SUMAR, RESTAR, MULTIPLICAR o DIVIDIR). Para salir ESC.");
     }
 
 
